@@ -43,7 +43,7 @@ class ChatGPTBot(Bot, OpenAIImage):
             "request_timeout": conf().get("request_timeout", None),  # 请求超时时间，openai接口默认设置为600，对于难问题一般需要较长时间
             "timeout": conf().get("request_timeout", None),  # 重试超时时间，在这个时间内，将会自动重试
         }
-        self.api_key = "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"
+        self.api_key = "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"
         self.client = openai.OpenAI(api_key=self.api_key, base_url="https://gpt-proxy-xfmmcraaoj.us-east-1.fcapp.run")
 
     def reply(self, query, context=None):
