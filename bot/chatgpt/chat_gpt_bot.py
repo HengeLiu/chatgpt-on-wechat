@@ -44,7 +44,7 @@ class ChatGPTBot(Bot, OpenAIImage):
             "timeout": conf().get("request_timeout", None),  # 重试超时时间，在这个时间内，将会自动重试
         }
         self.api_key = "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"
-        self.client = openai.OpenAI(api_key=self.api_key, base_url="https://gpt-proxy-wzggpmscej.us-east-1.fcapp.run")
+        self.client = openai.OpenAI(api_key=self.api_key, base_url="https://gpt-proxy-xfmmcraaoj.us-east-1.fcapp.run")
 
     def reply(self, query, context=None):
         # acquire reply content
